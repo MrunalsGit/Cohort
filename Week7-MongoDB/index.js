@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require("express");
 const app = express();
 const jwt = require("jsonwebtoken");
@@ -6,10 +7,10 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const {z} = require("zod");
-
 const{UserModel, TodoModel} = require("./db");
+const mongoUrl = process.env.mongoUrl
 
-mongoose.connect("mongodb+srv://mrunal:NEMlEdxZ6uquEJVo@cluster0.jqsewyq.mongodb.net/Todo-database")
+mongoose.connect(mongoUrl)
 
 app.use(cors());
 app.use(express.json());
