@@ -1,0 +1,46 @@
+
+.content{
+    display:flex;
+    justify-content: center;
+}
+#heading{
+    margin: 8vh auto 3vh auto;
+    font-size: 80px;
+    border:bold 3px black;
+}
+.taskInput{
+    margin: 3vh auto;
+    gap:10px;
+    height:3vh;
+}
+#title{
+    display:flex;
+    flex-direction: column;
+    padding:30px;
+    margin:10px auto;
+    border: 2px solid black;
+    border-radius: 2vh;
+    height:60vh;
+    width:50%;
+}
+.listElement{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0 15px;
+    margin:5px 0px;
+    font-size: 3vh;
+    height:10%;
+    border:2px solid black;
+    border-radius: 1vh;
+    padding:0 4vh;
+}
+.listButton{
+    white-space: nowrap;
+    margin:0px 2vh;
+    display:flex;
+    align-content: center;
+    gap:20%;
+    max-height: 50px;
+}

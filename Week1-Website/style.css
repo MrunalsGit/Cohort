@@ -1,0 +1,65 @@
+html{
+    background:#0D1117;
+    color: #9ba3b4;
+
+}
+.UpBar{
+    background : #0D1117;;
+    height:50px;
+    padding : 0px 200px;
+    /* padding-bottom:0px; */
+}
+#navlogo{
+    height : 35px;
+    width : 35px;
+    /* padding : 20px;  */
+}
+.navOp{
+    padding-left : 30px;
+    /* padding-bottom : 20px;    */
+    cursor : pointer;
+    vertical-align:venter;
+}
+.center{
+    color:white;
+    font-size:60px;
+    font-weight : bold;   
+    padding-top : 50px;
+}
+.download{
+    font-size:13px;
+    background:#333;
+    height:120px;
+    width:400px;
+    margin-top: 50px;
+    border-radius:30px;
+    padding-top:25px;
+}
+#dbutton{
+    font-size:15px;
+    color: black;
+    background: white;
+    height: 30px;
+    width: 250px;
+    border-radius: 15px;
+    padding-top: 15px;
+    cursor : pointer;
+    
+}
+#win{
+    height:25px;
+    width:25px;
+}
+.left{
+    margin-top:150px;
+    /* background:grey; */
+    height:300px;
+    width:450px;
+    box-sizing:border-box;
+}
+
+.right{
+    /* margin-top:100px;     */
+    height:600px;
+    width:800px;
+}

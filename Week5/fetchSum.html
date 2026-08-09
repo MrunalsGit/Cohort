@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+    <div>
+        <input id="vala" placeholder="Enter a">
+    </div>
+    <div>
+        <input id="valb" placeholder="Enter b">
+    </div>
+    <div>
+        <br>
+        <button onclick="sumIt()" >Sum</button>
+        <br>
+        <br>
+    </div>
+
+    <script>
+        let a,b;
+
+        async function sumIt(){
+            a = document.querySelector("#vala").value;
+            b = document.querySelector("#valb").value;
+
+            let ans = document.createElement("div");
+            if(a == "" || b == ""){
+                ans.innerHTML = "Make sure both values are entered";
+            }
+            else{
+                let sum = await getSum(a,b);
+                ans.innerHTML = `${a} + ${b} = ${sum}`;
+            }
+
+            document.querySelector("body").appendChild(ans);
+        }
+
+        async function getSum(a,b){
+            let response = await fetch(`http://localhost:3011/add/${a}/${b}`);
+            let data = await response.json(); 
+            return data;
+        }
+    </script>
+
+</body>
+</html>
