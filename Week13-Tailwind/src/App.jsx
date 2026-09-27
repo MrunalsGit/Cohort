@@ -6,8 +6,8 @@ function App() {
 
   return <>
     {/* <FrontPage/> */}
-    {/* <Task /> */}
-    <DarkMode/>
+    <Task />
+    {/* <DarkMode/> */}
   </>
 }
 
