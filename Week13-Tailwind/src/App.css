@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme{
+    --color-gray-800:#8095ac;
+    --color-rand-100:#000000;
+    --color-rand-200:#19406b;
+}
+
+/* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
+@custom-variant dark (&:where(.dark, .dark *));
