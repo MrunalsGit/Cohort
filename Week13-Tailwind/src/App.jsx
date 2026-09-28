@@ -1,6 +1,6 @@
-import { DarkMode } from "./components/darkmode";
-import { FrontPage } from "./components/frontPage";
-import {Task} from "./components/task";
+import { DarkMode } from "./components/Class/darkmode";
+import { FrontPage } from "./components/Class/frontPage";
+import {Task} from "./components/Task/task";
 
 function App() {
 

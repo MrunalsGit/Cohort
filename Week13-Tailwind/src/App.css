@@ -4,6 +4,7 @@
     --color-gray-800:#8095ac;
     --color-rand-100:#000000;
     --color-rand-200:#19406b;
+    --color-rand-300:#1f1f1f;
 }
 
 /* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
