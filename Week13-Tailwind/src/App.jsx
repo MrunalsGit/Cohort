@@ -5,8 +5,8 @@ import {Task} from "./components/Task/task";
 function App() {
 
   return <>
-    {/* <FrontPage/> */}
-    <Task />
+    <FrontPage/>
+    {/* <Task /> */}
     {/* <DarkMode/> */}
   </>
 }

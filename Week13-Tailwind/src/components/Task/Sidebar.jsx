@@ -4,7 +4,7 @@ export const Sidebar = ()=>{
     return (
         <div className={`fixed  duration-300 bg-black md:bg-rand-300 h-full w-10 xl:w-64`}>
             <div>
-                <span className={`p-2 hidden text-white text-xl xl:block`}>Zoom.in</span>
+                <span className={`p-2 ml-2 mt-2 hidden text-white text-xl xl:block`}>Zoom.in</span>
                 <span className={`pt-2 flex justify-center items-center  xl:hidden`}>
                     <img className={`cursor-pointer p-0 m-0 h-7 flex justify-center items-center`} src="/menu.svg" />
                 </span>
