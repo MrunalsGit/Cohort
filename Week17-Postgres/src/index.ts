@@ -1,5 +1,9 @@
+import dotenv from "dotenv";
 import { Client } from "pg";
-const pgClient = new Client("postgresql://neondb_owner:npg_a5VbAdfm7jBD@ep-muddy-glade-b5egeh7v-pooler.c-7.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require");
+
+dotenv.config({ path: "../.env" });
+const postgresUrl = process.env.postgresUrl
+const pgClient = new Client({connectionString: postgresUrl});
 
 async function goLive(){
     await pgClient.connect()
